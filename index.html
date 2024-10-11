@@ -9,27 +9,57 @@
 </head>
 <body>
   <main>
-     
-    <!-- Header section -->
-     <section class="flex justify-around items-center h-20">
-      <div>
-        <img src="./images/Label.png" class="h-10" alt="">
-      </div>
-      <div>
-        <nav>
-          <ul class="text-2xl font-bold font-mono flex gap-10 leading-20">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Shop</a></li>
-            <li><a href="#">New</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
-      <button class="btn text-white bg-[#E76f51]">Login</button>
-     </section>
-     
 
+    <!-- Header Section -->
+   
+    <div class="navbar bg-base-100">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+          </div>
+          <ul
+            tabindex="0"
+            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+            <li><a>Home</a></li>
+            <li>
+              <a>Shop</a>
+              
+            </li>
+            <li><a>News</a></li>
+          </ul>
+        </div>
+        <div>
+        <a class="text-center text-[40px] text-red h-[150px] w-[150px] mt-16 font-bold">
+          <img src="./images/Label.png" class=" mr-[-50px]" alt="">
+        </a>
+        </div>
+      </div>
+      
+      <div class="navbar-end hidden text-[30px] font-bold text-black lg:flex">
+        <ul class="menu menu-horizontal px-5 text-[20px]">
+          <li><a>Home</a></li>
+          <li><a>Shop</a></li>
+          <li><a>News</a></li>
+          <li><a>Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="navbar-end">
+        <button class="btn text-white bg-[#E76f51] ml-[-200px]">Login</button>
+      </div>
+    </div>
+
+   
     <!-- Hero Area -->
+
      <section class="md:w-[1440px] md:mx-auto">
     <div class="carousel w-full">
       <div id="slide1" class="carousel-item relative w-full p-[104px] box-border bg-[#E76F511A] justify-center">
